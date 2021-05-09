@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon Album</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body id="main">
+    <div>
+        <nav>
+            <img src="imgs/logo.png" id="logo">
+            <img src="imgs/hamb_nav.png" id="hamb_nav">
+        </nav>
+        <div id="dropdown_box">
+            <div id="nav_m_yt">Your Team</div>
+            <div id="nav_m_rp">Random Pokemon</div>
+            <div id="nav_m_pl">Pokemon List</div>
+        </div>
+        <div id="main_box">
+            <div id="side_menu">
+                <ul>
+                    <li id="m_yt">Your Team</li>
+                    <li id="m_rp">Random Pokemon</li>
+                    <li id="m_pl">Pokemon List</li>
+                </ul>
+            </div>
+            <div id="one">
+                <div id="side_display">
+                    <div id="team_viewer">
+                        <h1>Your Team:</h1>
+                        <div id="team_viewer_display"></div>
+                    </div>
+                    <div id="poke_viewer">
+                        <div id="poke_viewer_search">
+                            <input id="searchBox" placeholder="search pokemon" autocomplete="true" />
+                            <datalist id="listit">
+                                <option></option>
+                            </datalist>
+                        </div>
+                        <div id="poke_viewer_main">
+                            <img id="poke_pic"></img>
+                            <div id="poke_name"></div>
+                            <div id="poke_types"></div>
+                        </div>
+                    </div>
+                    <div id="side_showcase">
+                    </div>
+                    <div id="buttons">
+                        <button id="prev_btn">prev</button>
+                        <button id="addToTeamBtn">Add To Your Team</button>
+                        <button id="next_btn">next</button>
+                    </div>
+                    <div id="random_viewer">
+                        <div id="ran_poke_viewer"></div>
+                        <div id="ran_poke_name"></div>
+                        <div>
+                            <img src="imgs/dice.png" id="dice" width="50px" height="50px">
+                        </div>
+                        <button id="addToTeamBtn2">Add To Your Team</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

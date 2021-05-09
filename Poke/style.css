@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 176, 0);
+    border-radius: 14px;
+}
+
+
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 176, 0);
+    border-radius: 6px;
+    box-shadow: inset -30px -10px 0px #f0f0f0;
+}
+
+button {
+    margin-top: 5px;
+    color: white;
+    background-color: #222;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #444;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input {
+    color: #222;
+}
+
+button:hover {
+    background-color: #111;
+}
+
+#hamb_nav {
+    display: none;
+}
+
+#main {
+    background-color: #222;
+}
+
+#dropdown_box {
+    display: none;
+}
+
+#dropdown_box div {
+    display: none;
+}
+
+#dropdown_box div:hover {
+    color: #FFB000;
+}
+
+#main_box {
+    display: flex;
+
+    align-items: flex-start;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    pointer-events: none;
+}
+
+#logo_name {
+    font-family: 'Press Start 2P';
+    color: #FFB000;
+}
+
+#one {
+    display: block;
+}
+
+#hamb_nav {
+    width: 30px;
+    height: 30px;
+    color: #f00;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#side_menu {
+    width: 50vw;
+
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url('imgs/side_menu_bg.png')*/
+    /*    flex-basis: 50%;*/
+}
+
+#side_menu ul {
+
+    color: ivory;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 2em;
+    list-style: none;
+    text-align: center;
+}
+
+#dice {
+    filter: brightness(90%) contrast(90%);
+}
+
+#dice:hover {
+    filter: brightness(100%) contrast(100%);
+}
+
+#side_menu li {
+    cursor: pointer;
+}
+
+#side_menu li:hover {
+    color: rgb(255, 176, 0);
+}
+
+#side_display {
+    /*  background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    max-height: 65vh;
+    position: relative;
+    margin-right: 10px;
+    /*align-items: stretch*/
+}
+
+#poke_viewer {
+    height: 30%;
+    /*    background-color: green;*/
+    text-align: center;
+    padding: 10px;
+}
+
+#poke_viewer_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#poke_pic {
+    max-height: 100px;
+    max-width: 100px;
+    display: block;
+}
+
+#poke_name {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#poke_types {
+    color: white;
+    /*background-color: red;*/
+}
+
+#side_showcase {
+    width: 50vw;
+    display: grid;
+    color: ivory;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+
+    font-size: 12px;
+    max-height: 60%;
+    /*line-height: 5em;*/
+    overflow: auto;
+    /*background-color: red;*/
+    /*display: flex;
+justify-content: center;
+align-items: center;*/
+    background-image: url('imgs/side_menu_bg.png');
+    background-color: #222;
+    /*    background-blend-mode: luminosity;*/
+    border-radius: 12px;
+    list-style: none;
+}
+
+#side_showcase li {
+    padding: 10px 0 0 0;
+    margin: 30px 0;
+    line-height: 10px;
+}
+
+
+
+
+#buttons {
+    display: none;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#buttons button {
+    display: inherit;
+    background-color: #222;
+    padding: 20px;
+
+}
+
+
+
+#buttons button:hover {
+    background-color: #111;
+
+}
+
+.active {
+    color: #805F19;
+    pointer-events: none;
+}
+
+.poke {
+    cursor: pointer;
+}
+
+#random_viewer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+    width: 50vw;
+    height: 100%;
+    color: white;
+    font-family: arial;
+}
+
+#dice {
+    cursor: pointer;
+    display: none;
+    margin-top: 15px;
+}
+
+#searchBox {
+    display: none;
+    padding: 5px;
+    font-size: 15px;
+    border-width: 2px;
+    border-color: #444;
+    background-color: #666;
+    color: #dadada;
+    border-style: solid;
+    border-radius: 36px;
+    font-family: arial;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+#searchBox::placeholder {
+    color: #999;
+    font-family: arial;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+
+#m_yt {
+    /*background-color: red;*/
+}
+
+#team_viewer {
+
+    /*background-color: red;*/
+    display: none;
+    width: 50vw;
+    height: 100%;
+}
+
+#team_viewer_display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: 30px;
+}
+
+.team_slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+
+    #hamb_nav {
+        display: block;
+    }
+
+
+    #dropdown_box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #dropdown_box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: inherit;
+        background-color: #111;
+        color: white;
+        cursor: pointer;
+    }
+
+    #side_menu {
+        display: none;
+    }
+
+    #side_display {
+        width: 100vw;
+        max-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #side_showcase {
+        width: 90vw !important;
+        /*     display: flex;
+     justify-content: center;
+     align-items: center;*/
+
+    }
+
+    #buttons button {
+        margin: 5px;
+    }
+
+    .poke {
+        padding: 5px;
+    }
+
+    #poke_viewer {
+        width: 100vw !important;
+
+    }
+
+    #searchBox {
+        margin-left: 10px;
+
+    }
+
+    #addToTeamBtn2 {
+        display: block;
+        width: 90%;
+        border-radius: 0%;
+    }
+
+    #team_viewer {
+        width: 100vw !important;
+    }
+
+    #random_viewer {
+        width: 100vw !important;
+    }
+
+    #side_showcase {
+        max-height: 100%
+    }
+}
